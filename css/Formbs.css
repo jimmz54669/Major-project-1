@@ -13,10 +13,10 @@ h1 {
     text-shadow: 7px 7px 10px gray;
     font-weight: bold;
 }
-.bi {
+h1 a {
     color: black;
 }
-.bi:hover {
+.header:hover {
     color: maroon;
 }
 #c1 {
