@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.d-block {
+    height: 700px;
+}
+.navbar {
+    background: linear-gradient(to right, lightgray, white, lightgray);
+}
+.nav-link {
+    color:#000;
+}
+.nav-link:hover {
+    color: maroon;
+}
+.nav-item {
+    border: 1px solid transparent;
+    font-family: hammersmith system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.navbar-brand {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.navbar-brand:hover {
+    color: maroon;
+}
+.nav-item:hover {
+    color: maroon;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.bi {
+    color: black;
+}
+.bi:hover {
+    color: maroon;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#carousel-item {
+    background: no-repeat scroll center scroll;
+    -webkit-bacground-size: cover;
+    background-size: cover;
+}
+#carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
+}
+.carousel-caption {
+    bottom: 190px;
+}
+.carousel-caption h1 {
+    font-size: 70px;
+}
+#wtd {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+.shop {
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: maroon;
+    font-size: 200%;
+}
+.shop:hover {
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+#seeproducts {
+    text-decoration: none;
+    color: gray;
+}
+#seeproducts:hover {
+    color: white;
+}
+#reg {
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: maroon;
+}
+#reg:hover {
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+}
+.card {
+    background-color: transparent;
+    box-shadow: 8px 8px 12px gray;
+}
+.override-card .card {
+    width: 100%;
+}
+.jumbotron {
+    border-style: solid;
+    border-color: rgb(240, 239, 239);
+    border-radius: 30px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    box-shadow: 8px 8px 12px lightgray;
+    background: linear-gradient(to right, white, rgb(240, 239, 239));
+}
+#jumbotron {
+    padding: 25px 25px;
+}
+.fw-bold {
+    margin-top: 2%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+#colorp {
+    margin-left: 60px;
+}
+.box {
+    width: 200px;
+    transition: 1s;
+}
+.box img {
+    width: 100%;
+}
+.box:hover {
+    transform:scale(1.3);
+    z-index:2;
+}
+#bn {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#bn:hover {
+    color: white;
+}
+.testimonial-area {
+    display: grid;
+    place-items: center;
+}
+.testimonial {
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+    border: 2px solid;
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px rgb(126, 126, 126);
+}
+.section-header {
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 15px;
+    color: black;
+}
+.section-header::after {
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    background: black;
+}
+.section-header span {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+}
+.single-item {
+    border-radius: 20px;
+    background: linear-gradient(to right, lightgray, white);
+    color: #000;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.img-area {
+    margin: 0 15px 15px 15px;
+}
+.img-area img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid gray;
+}
+.content {
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+.content p {
+    text-align: justify;
+}
+.content p span {
+    font-size: 48px;
+    margin-right: 20px;
+    color: maroon;
+}
+.socials i {
+    margin-right: 25px;
+}
+.bio h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#carousel-control-prev-icon,
+#carousel-control-next-icon {
+    background-color: black;
+}
+#b {
+    text-align: center;
+    display: flex;
+}
+.HE {
+    text-align: center;
+}
+.sidenav {
+    margin-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+    border: 3px solid black;
+}
+#content {
+    background: linear-gradient(to left, lightgray, white);
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.card-header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.site-footer {
+    width: 100%;
+    margin-top: 40px;
+    background-color: gray;
+    padding-top: 25px;
+}
+.footer-link {
+    list-style: none;
+}
+

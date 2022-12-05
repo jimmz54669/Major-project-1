@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="icon" href="images/mylogo.png" sizes="16x16 32x32" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GDO Furniture Shop</title>
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/mylogo.png" width="30" height="30"><i>GDO Furniture Shop</i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-center collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="myacc.html">My Account</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="All.html">Products</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="input" id="search">
+                    <input type="search" class="form-control-sm" placeholder="Search here..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </span>
+                </div>
+                <div class="mx-3">
+                    <a href="mycart.html" class="cart" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="login.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel-item">
+                <img src="images/1.jpg" alt="Furniture 1" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h1>Versatile Furniture For your Home</h1>
+                    <a href="All.html" class="shop">SHOP NOW!</a>
+                </div>
+            </div>
+            <div class="col-sm-3 carousel-item" id="carousel-item">
+                <img src="images/2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h1>Design on your own</h1>
+                    <p>Customizable design according to your liking.</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="carousel-item">
+                <img src="images/3.jpg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h1>Become a member!</h1>
+                    <p><a href="signup.html" class="registration" id="reg">Click Here!</a> to register</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-3">
+                <img class="mt-5" src="images/mylogo.png" width="300px" height="300px">
+            </div>
+            <div class="col-sm-5 mt-5">
+                <h1>Welcome to GDO Furnitures</h1>
+                <p class="text-muted">More than 30 years of making fine quality furnitures</p>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contactUs">Contact us <i class="bi bi-telephone"></i></button>
+                <div class="modal" id="contactUs">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Email us</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="needs-validation" novalidate>
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control my-3" id="email" placeholder="Enter email" required>
+                                            <label for="email" class="form-label">Email <i class="bi bi-envelope-fill"></i></label>
+                                            <div class="valid-feedback"><i class="bi bi-hand-thumbs-up"></i></div>
+                                            <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>Please enter a valid email or phone number.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="username" class="form-control my-3" id="username" placeholder="Enter your name" required>
+                                            <label for="username" class="form-label">Name</label>
+                                            <div class="valid-feedback"><i class="bi bi-hand-thumbs-up"></i></div>
+                                            <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>Please enter your name.</div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col">
+                                        <p class="lead text-muted">Message:</p>
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="10" required></textarea>
+                                            <div class="valid-feedback"><i class="bi bi-hand-thumbs-up"></i></div>
+                                            <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i>Please write a message.</div>
+                                        </div>
+                                        <hr>
+                                        <button type="submit" class="btn btn-danger">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-secondary"><a href="All.html" id="seeproducts">SEE PRODUCTS <i class="bi bi-eye"></i></a></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <section class="text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <h2 class="text-center mt-4" id="wtd">What We Do</h2>
+                        <p class="lead text-muted mb-5">We take high pride with our high quality furnitures</p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 mb-5 override-card">
+                                <div class="card h-100">
+                                    <div class="container" id="imglogos">
+                                        <img class="img-top mt-5" src="images/handcraft.png" width="130px" height="130px">
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title mb-3">State of the art craftmanship</h5>
+                                        <p class="text-muted mb-5">We have been on industry for more than 30 years. We take pride on our unrivaled craftmanship.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-5 override-card">
+                                <div class="card h-100">
+                                    <div class="container" id="imglogos">
+                                        <img class="img-top mt-5" src="images/leather.png" width="130px" height="130px">
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title mb-3">Fine quality leather</h5>
+                                        <p class="text-muted mb-5">sadasdsad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-5 override-card">
+                                <div class="card h-100">
+                                    <div class="container" id="imglogos">
+                                        <img class="img-top mt-5" src="images/wood.png" width="130px" height="130px">
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title mb-3">Authentic high quality wood</h5>
+                                        <p class="text-muted mb-5">sadasdsad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-5 override-card">
+                                <div class="card h-100">
+                                    <div class="container" id="imglogos">
+                                        <img class="img-top mt-5" src="images/wait.png" width="130px" height="130px">
+                                    </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Classical and age proof designs</h5>
+                                    <p class="text-muted mb-5">sadasdsad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container text-center mb-5">
+        <section class="text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2 class="text-center mt-4" id="wtd">Shop New Arrivals</h2>
+                    <p class="lead text-muted mb-5">New arrivals coming in regularly, find the freshest modern styles here.</p>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 mb-5 override-card">
+                            <div class="card h-100">
+                                <div class="container box" id="imgitem">
+                                    <a href="beds.html">
+                                        <img class="img-top mt-5" src="images/qsb.png" width="130px" height="130px">
+                                    </a>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Queen size bed</h5>
+                                    <p class="text-muted mb-1">₱30,500</p>
+                                    <p class="text-muted mb-1">Dimension: 60x75</p>
+                                    <div class="container-fluid d-flex">
+                                        <label for="colorpicker" class="form-label text-muted" id="colorp">Color:</label>
+                                        <input type="color" class="form-control form-control-color form-control-sm" id="colorpicker" title="Choose a color">
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col d-flex">
+                                            <p class="text-muted">Wood:</p>
+                                            <select class="form-select" id="wodsel" name="wodsel">
+                                                <option></option>
+                                                <option>Gemilina</option>
+                                                <option>Mahogani</option>
+                                                <option>Narra</option>
+                                                <option>Molave</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-4 mt-2 d-flex">Quantity: <input type="number" class="form-control form-control-sm" name="num"></p>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary" id="btnbuyn" data-bs-toggle="modal" data-bs-target="#buyNow"><b>Buy now!</b></button>
+                                        <div class="modal" id="buyNow">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Checkout</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p>Message:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <input type="textbox" name="message" id="textbox">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p><i class="bi bi-currency-dollar"></i>Payment Option:</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <form>
+                                                                    <select class="form-select" id="paymentopt" name="paymentopt">
+                                                                        <option></option>
+                                                                        <option>Gcash</option>
+                                                                        <option>Paypal</option>
+                                                                        <option>Online Banking</option>
+                                                                        <option>Cash on Delivery</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><i class="bi bi-card-list"></i>Payment details</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Merchandise Subtotal:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Shipping Subtotal</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><b>Total Payment:</b></p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p><b>₱0.00</b></p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Place Order</button>
+                                                    </div>                                          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myCart">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal" id="myCart">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Cart</h4>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><b>Added to Cart</b></p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5 override-card">
+                            <div class="card h-100">
+                                <div class="container box" id="imgitem">
+                                    <a href="cabinets.html">
+                                        <img class="img-top mt-5" src="images/sc.jpg" width="130px" height="130px">
+                                    </a>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Sample Cabinet</h5>
+                                    <p class="text-muted mb-1">₱10,900</p>
+                                    <p class="text-muted mb-1">Dimension: 50x40</p>
+                                    <div class="container-fluid d-flex">
+                                        <label for="colorpicker" class="form-label text-muted" id="colorp">Color:</label>
+                                        <input type="color" class="form-control form-control-color form-control-sm" id="colorpicker" title="Choose a color">
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col d-flex">
+                                            <p class="text-muted">Wood:</p>
+                                            <select class="form-select" id="wodsel" name="wodsel">
+                                                <option></option>
+                                                <option>Gemilina</option>
+                                                <option>Mahogani</option>
+                                                <option>Narra</option>
+                                                <option>Molave</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-4 mt-2 d-flex">Quantity: <input type="number" class="form-control form-control-sm" name="num"></p>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary" id="btnbuyn" data-bs-toggle="modal" data-bs-target="#buyNow"><b>Buy now!</b></button>
+                                        <div class="modal" id="buyNow">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Checkout</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p>Message:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <input type="textbox" name="message" id="textbox">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p><i class="bi bi-currency-dollar"></i>Payment Option:</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <form>
+                                                                    <select class="form-select" id="paymentopt" name="paymentopt">
+                                                                        <option></option>
+                                                                        <option>Gcash</option>
+                                                                        <option>Paypal</option>
+                                                                        <option>Online Banking</option>
+                                                                        <option>Cash on Delivery</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><i class="bi bi-card-list"></i>Payment details</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Merchandise Subtotal:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Shipping Subtotal</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><b>Total Payment:</b></p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p><b>₱0.00</b></p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Place Order</button>
+                                                    </div>                                          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myCart">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal" id="myCart">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Cart</h4>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><b>Added to Cart</b></p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5 override-card">
+                            <div class="card h-100">
+                                <div class="container box" id="imgitem">
+                                    <a href="chairs.html">
+                                        <img class="img-top mt-5" src="images/kc.png" width="150px" height="130px">
+                                    </a>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">King Chair</h5>
+                                    <p class="text-muted mb-1">₱7,500</p>
+                                    <p class="text-muted mb-1">Dimension: 25x15</p>
+                                    <div class="container-fluid d-flex">
+                                        <label for="colorpicker" class="form-label text-muted" id="colorp">Color:</label>
+                                        <input type="color" class="form-control form-control-color form-control-sm" id="colorpicker" title="Choose a color">
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col d-flex">
+                                            <p class="text-muted">Wood:</p>
+                                            <select class="form-select" id="wodsel" name="wodsel">
+                                                <option></option>
+                                                <option>Gemilina</option>
+                                                <option>Mahogani</option>
+                                                <option>Narra</option>
+                                                <option>Molave</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-4 mt-2 d-flex">Quantity: <input type="number" class="form-control form-control-sm" name="num"></p>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary" id="btnbuyn" data-bs-toggle="modal" data-bs-target="#buyNow"><b>Buy now!</b></button>
+                                        <div class="modal" id="buyNow">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Checkout</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p>Message:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <input type="textbox" name="message" id="textbox">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p><i class="bi bi-currency-dollar"></i>Payment Option:</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <form>
+                                                                    <select class="form-select" id="paymentopt" name="paymentopt">
+                                                                        <option></option>
+                                                                        <option>Gcash</option>
+                                                                        <option>Paypal</option>
+                                                                        <option>Online Banking</option>
+                                                                        <option>Cash on Delivery</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><i class="bi bi-card-list"></i>Payment details</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Merchandise Subtotal:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Shipping Subtotal</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><b>Total Payment:</b></p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p><b>₱0.00</b></p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Place Order</button>
+                                                    </div>                                          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myCart">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal" id="myCart">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Cart</h4>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><b>Added to Cart</b></p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-5 override-card">
+                            <div class="card h-100">
+                                <div class="container box" id="imgitem">
+                                    <a href="sofa.html">
+                                        <img class="img-top mt-5" src="images/sofa.png" width="130px" height="130px">
+                                    </a>
+                                </div>
+                                <div class="card-body p-4">
+                                    <h5 class="card-title mb-3">Sofa</h5>
+                                    <p class="text-muted mb-1">₱21,000</p>
+                                    <p class="text-muted mb-1">Dimension: 30x40</p>
+                                    <div class="container-fluid d-flex">
+                                        <label for="colorpicker" class="form-label text-muted" id="colorp">Color:</label>
+                                        <input type="color" class="form-control form-control-color form-control-sm" id="colorpicker" title="Choose a color">
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col d-flex">
+                                            <p class="text-muted">Wood:</p>
+                                            <select class="form-select" id="wodsel" name="wodsel">
+                                                <option></option>
+                                                <option>Gemilina</option>
+                                                <option>Mahogani</option>
+                                                <option>Narra</option>
+                                                <option>Molave</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mb-4 mt-2 d-flex">Quantity: <input type="number" class="form-control form-control-sm" name="num"></p>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-secondary" id="btnbuyn" data-bs-toggle="modal" data-bs-target="#buyNow"><b>Buy now!</b></button>
+                                        <div class="modal" id="buyNow">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Checkout</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p>Message:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <input type="textbox" name="message" id="textbox">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <p><i class="bi bi-currency-dollar"></i>Payment Option:</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <form>
+                                                                    <select class="form-select" id="paymentopt" name="paymentopt">
+                                                                        <option></option>
+                                                                        <option>Gcash</option>
+                                                                        <option>Paypal</option>
+                                                                        <option>Online Banking</option>
+                                                                        <option>Cash on Delivery</option>
+                                                                    </select>
+                                                                </form>
+                                                            </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><i class="bi bi-card-list"></i>Payment details</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Merchandise Subtotal:</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p class="text-muted">Shipping Subtotal</p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p class="text-muted">₱0.00</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <p><b>Total Payment:</b></p>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <p><b>₱0.00</b></p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Place Order</button>
+                                                    </div>                                          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myCart">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal" id="myCart">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Cart</h4>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><b>Added to Cart</b></p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section class="testimonial-area">
+            <div class="container">
+                <h1 class="section-header">
+                    Client review <span>What people saying...</span>
+                </h1>
+                <div class="testimonial">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carousel-inner">
+                        <div class="carousel-item active" id="testimony">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="images/a.jpg" alt="">
+                                            </div>
+                                            <div class="bio">
+                                                <h2>Marie Test</h2>
+                                                <h4>Reporter</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <p><span><i class="fa fa-quote-left"></i></span>I've always wanted a comfortable sofa but we have a very limited space.. I highly recommend this furniture if you want a space saving, stylish and multi-purpose sofa</p>
+                                            <p class="socials">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-facebook"></i>
+                                                <i class="fa fa-youtube"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="testimony">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="images/b.jpg" alt="">
+                                            </div>
+                                            <div class="bio">
+                                                <h2>Andy Lim</h2>
+                                                <h4>Electrician</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <p><span><i class="fa fa-quote-left"></i></span>I've been looking for a recliner when i saw this. I knew right away that it is what I wanted. It's comfortable to sit on and I'm happy with my choice of color</p>
+                                            <p class="socials">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-facebook"></i>
+                                                <i class="fa fa-youtube"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="testimony">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="images/c.jpg" alt="">
+                                            </div>
+                                            <div class="bio">
+                                                <h2>Johnny Saints</h2>
+                                                <h4>Maintenance/Electrician/Lawyer/<br>Astronaut/Plumber/Soldier</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <p><span><i class="fa fa-quote-left"></i></span>Very versatile as it's easy to convert the sofa to a sofa bed in a matter of seconds. Highly recomended!</p>
+                                            <p class="socials">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-facebook"></i>
+                                                <i class="fa fa-youtube"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" id="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" id="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="site-footer">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>wasda</h2>
+                <p>sadsa</p>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer-link">
+                    <li>
+                        <span class="me-3">sdas</span><span>sdasfeg</span>
+                    </li>
+                    <li>
+                        <span class="me-3">sdas</span><span>sdasfeg</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>dasdasdas</h2>
+                <ul class="footer-link">
+                    <li><a href="#"></a> asdas</li>
+                    <li><a href="#"></a> asdas</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="node.js"></script>
+</body>
+</html>
