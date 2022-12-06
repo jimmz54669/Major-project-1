@@ -149,11 +149,10 @@ h1 {
 .testimonial-area {
     display: grid;
     place-items: center;
+    justify-content: center;
 }
 .testimonial {
     max-width: 1000px;
-    padding: 0 15px 50px;
-    margin: 0 auto 80px auto;
     border: 2px solid;
     border-radius: 20px;
     box-shadow: 8px 8px 12px rgb(126, 126, 126);
@@ -247,10 +246,18 @@ h1 {
 .site-footer {
     width: 100%;
     margin-top: 40px;
-    background-color: gray;
+    background-color: #f7f7f7;
     padding-top: 25px;
+    text-align: center;
 }
 .footer-link {
+    color: gray;
     list-style: none;
+    text-decoration: none;
+    text-align: left;
 }
+.footer-link:hover {
+    color: maroon;
+}
+
 
