@@ -47,7 +47,7 @@ h1 {
 }
 #carousel-item {
     background: no-repeat scroll center scroll;
-    -webkit-bacground-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
 #carousel-item::before {
@@ -104,6 +104,12 @@ h1 {
     background-color: white;
     border-style: solid;
     border-radius: 5px;
+}
+
+/*Logo and welcome*/
+
+#rowforwelcome {
+    margin-top: 2%;
 }
 
 /*What we do*/
