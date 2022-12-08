@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+/*Navbar*/
+
 .d-block {
     height: 700px;
 }
@@ -36,6 +39,9 @@
 .bi:hover {
     color: maroon;
 }
+
+/*Carousel*/
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -99,6 +105,9 @@ h1 {
     border-style: solid;
     border-radius: 5px;
 }
+
+/*What we do*/
+
 .card {
     background-color: transparent;
     box-shadow: 8px 8px 12px gray;
@@ -123,6 +132,9 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
 }
+
+/*Shop new Arrival*/
+
 #colorp {
     margin-left: 60px;
 }
@@ -146,6 +158,9 @@ h1 {
 #bn:hover {
     color: white;
 }
+
+/*Testimonial*/
+
 .testimonial-area {
     display: grid;
     place-items: center;
@@ -220,6 +235,9 @@ h1 {
 #carousel-control-next-icon {
     background-color: black;
 }
+
+/*My acc*/
+
 #b {
     text-align: center;
     display: flex;
@@ -242,6 +260,8 @@ h1 {
     margin-top: 20px;
     text-align: center;
 }
+
+/*Footer*/
 
 .site-footer {
     width: 100%;
