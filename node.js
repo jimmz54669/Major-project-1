@@ -18,3 +18,15 @@
       }, false)
     })
 })()
+
+
+const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
+
+window.addEventListener('load',() => {
+  spinnerWrapperEl.style.opacity = '0.5';
+
+  setTimeout(() => {
+    spinnerWrapperEl.style.display = 'none';
+  },200)
+});
+  
