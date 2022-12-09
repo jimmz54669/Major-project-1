@@ -136,6 +136,12 @@ h1 {
     margin-bottom: 1%;
     padding-bottom: 5px;
 }
+.bi-hand-thumbs-up {
+    color: green;
+}
+.bi-exclamation-triangle {
+    color: red;
+}
 
 /*What we do*/
 
