@@ -129,8 +129,12 @@ h1 {
 /*Logo and welcome*/
 
 #rowforwelcome {
-    margin-top: 3%;
-    margin-bottom: 5%;
+    border: 1px solid lightgray;
+    background: linear-gradient(rgba(0, 0, 0, 0.183),rgba(169, 169, 169, 0.246),white);
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding-bottom: 5px;
 }
 
 /*What we do*/
@@ -286,6 +290,12 @@ h1 {
 .card-header {
     margin-top: 20px;
     text-align: center;
+}
+
+/*pagination*/
+
+.pagination {
+    justify-content: center;
 }
 
 /*Footer*/
