@@ -161,7 +161,76 @@
                 </div>
                 <div class="card-content">
                     <div class="btn-group mb-4 mt-4" id="myaccbtn">
-                        <button type="button" class="btn btn-outline-secondary" id="btnbuyn"><a href="#" id="bn">Place Orders</a></button>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#po">Place Orders</button>
+                        <div class="modal fade" id="po">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Checkout</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <p>Message:</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="textbox" name="message" id="textbox">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <p><i class="bi bi-currency-dollar"></i>Payment Option:</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <form>
+                                                    <select class="form-select" id="paymentopt" name="paymentopt">
+                                                        <option></option>
+                                                        <option>Gcash</option>
+                                                        <option>Paypal</option>
+                                                        <option>Online Banking</option>
+                                                        <option>Cash on Delivery</option>
+                                                    </select>
+                                                </form>
+                                            </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p><i class="bi bi-card-list"></i>Payment details</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p class="text-muted">Merchandise Subtotal:</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p class="text-muted">₱0.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p class="text-muted">Shipping Subtotal</p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p class="text-muted">₱0.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p><b>Total Payment:</b></p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <p><b>₱0.00</b></p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Place Order</button>
+                                    </div>                                          
+                                </div>
+                            </div>
+                        </div>
                         <button type="button" class="btn btn-outline-secondary">
                             <a href="#" class="cart" id="cart">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-x-fill" viewBox="0 0 16 16">
