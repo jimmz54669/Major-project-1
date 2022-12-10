@@ -168,12 +168,15 @@ h1 {
 /*Logo and welcome*/
 
 #rowforwelcome {
-    border: 1px solid lightgray;
+    border: 3px solid rgba(228, 228, 228, 0.783);
     background: linear-gradient(rgba(0, 0, 0, 0.183),rgba(169, 169, 169, 0.246),white);
     border-radius: 20px;
     margin-top: 2%;
     margin-bottom: 1%;
     padding-bottom: 5px;
+}
+#wellog {
+    width: 90%;
 }
 .bi-hand-thumbs-up {
     color: green;
